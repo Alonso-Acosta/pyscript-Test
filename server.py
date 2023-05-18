@@ -4,7 +4,7 @@ import subprocess
 app = Flask(__name__)
 
 # Ruta para cargar la GUI
-@app.route("\gui")
+@app.route("/gui")
 def cargar_gui():
     # Ejecutar el script Python y capturar la salida
     resultado = subprocess.check_output(["python", "GUITESTCONTRASTE.py"])
