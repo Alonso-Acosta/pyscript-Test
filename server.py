@@ -15,7 +15,7 @@ def cargar_gui():
     return resultado_decodificado
 
 # Ruta para cargar el archivo HTML
-@app.route("\ ")
+@app.route("/")
 def cargar_html():
     return render_template("index.html")
 
