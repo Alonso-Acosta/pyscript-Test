@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/gui")
 def cargar_gui():
     # Ejecutar el script Python y capturar la salida
-    resultado = subprocess.check_output(["python", "GUITESTCONTRASTE.py"])
+    resultado = subprocess.check_output(["python", "GUITESTCONSTRASTE.py"])
 
     # Convertir la salida en una cadena decodificada
     resultado_decodificado = resultado.decode("utf-8")
@@ -20,4 +20,10 @@ def cargar_html():
     return render_template("index.html")
 
 if __name__ == "__main__":
+    
+
+    # Ejecutar GUITESTCONTRASTE.py
+    subprocess.Popen(["python", "GUITESTCONSTRASTE.py"])
+
+    # Iniciar la aplicación Flask
     app.run()
