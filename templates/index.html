@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python GUI en el navegador</title>
+</head>
+<body>
+  <h1>Python GUI en el navegador</h1>
+  <div id="guiContainer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    // Función para cargar la GUI de Python usando PyScript
+    function cargarGUI() {
+      $.get("/gui", function(data) {
+        $("#guiContainer").html(data);
+      });
+    }
+
+    // Cargar la GUI cuando se carga la página
+    $(document).ready(function() {
+      cargarGUI();
+    });
+  </script>
+</body>
+</html>
