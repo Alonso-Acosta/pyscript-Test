@@ -23,7 +23,7 @@ if __name__ == "__main__":
     
 
     # Ejecutar GUITESTCONTRASTE.py
-    subprocess.Popen(["python", "GUITESTCONSTRASTE.py"])
+    subprocess.Popen(["python", "GUITESTCONTRASTE.py"])
 
     # Iniciar la aplicación Flask
     app.run()
