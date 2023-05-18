@@ -46,11 +46,11 @@ class GuiContraste(QtWidgets.QMainWindow):
             self.ui.Foto1.setVisible(False)
             if len(letras) == 5:
                 #Cargar letras:
-                self.letra1 = 'Sloan2/Sloan_{}.png'.format(letras[0])
-                self.letra2 = 'Sloan2/Sloan_{}.png'.format(letras[1])
-                self.letra3 = 'Sloan2/Sloan_{}.png'.format(letras[2])
-                self.letra4 = 'Sloan2/Sloan_{}.png'.format(letras[3])
-                self.letra5 = 'Sloan2/Sloan_{}.png'.format(letras[4])
+                self.letra1 = 'Sloan2\Sloan_{}.png'.format(letras[0])
+                self.letra2 = 'Sloan2\Sloan_{}.png'.format(letras[1])
+                self.letra3 = 'Sloan2\Sloan_{}.png'.format(letras[2])
+                self.letra4 = 'Sloan2\Sloan_{}.png'.format(letras[3])
+                self.letra5 = 'Sloan2\Sloan_{}.png'.format(letras[4])
                 if auxResul == 1:
                     self.contrasteActual = self.dato[i,0]
                     self.FiltroActual = self.dato[i,2]
@@ -77,9 +77,9 @@ class GuiContraste(QtWidgets.QMainWindow):
 
             elif len(letras) == 3:
                 # Cargar letras:
-                self.letra1 = 'Sloan2/Sloan_{}.png'.format(letras[0])
-                self.letra2 = 'Sloan2/Sloan_{}.png'.format(letras[1])
-                self.letra3 = 'Sloan2/Sloan_{}.png'.format(letras[2])
+                self.letra1 = 'Sloan2\Sloan_{}.png'.format(letras[0])
+                self.letra2 = 'Sloan2\Sloan_{}.png'.format(letras[1])
+                self.letra3 = 'Sloan2\Sloan_{}.png'.format(letras[2])
                 if auxResul == 1:
                     self.contrasteActual = self.dato[i,0]
                     self.FiltroActual = self.dato[i,2]
